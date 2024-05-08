@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+.footer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    height: 70px;
+    
+    
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    color: red;
+    font-size: 25px;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    border-right: 1px solid black;
+    padding: 10px;
+}
+.menu li:last-child{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.content{
+    display: flex;
+}
+.left, .middle, .right{
+    width: 33.33%;
+    margin: 10px;
+}
+.left p, .right p{
+    font-size: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery img {
+    width: calc(50% - 10px);
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+@media (max-width: 600px){
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .left, .middle, .right{
+        width: 100%;
+    }
+    .gallery img {
+        width: calc(100% - 10px);
+    }
+}

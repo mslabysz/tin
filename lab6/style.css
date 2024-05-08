@@ -1,0 +1,147 @@
+header {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+nav {
+  display: flex;
+  flex-grow: 1;
+  background-image: url('/lab6/images/bg_nav.png');
+  background-size: 100% 100%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  border-right: 1px solid black;
+  padding: 10px;
+  color: white;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background-image: url('/lab6/images/bg_nav_h.png');
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header header" "nav nav nav" "left main important" "footer footer footer";
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+#main {
+  grid-area: main;
+  background-color: #ffeef1;
+  padding: 2%;
+}
+#left {
+  grid-area: left;
+  background-color: #ffe4e8;
+  padding: 2%;
+}
+#left a {
+  color: black;
+}
+#left a:link,
+#left a:visited {
+  color: black;
+}
+#important {
+  grid-area: important;
+  background-color: #ffd4dc;
+  padding: 2%;
+}
+#important a {
+  color: black;
+  font-size: 19.2px;
+}
+#important a:link,
+#important a:visited {
+  color: black;
+}
+#important ul {
+  list-style-image: url('/lab6/images/bullet.png');
+}
+footer {
+  grid-area: footer;
+  background-color: #ff8da1;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header,
+  nav,
+  #main,
+  footer {
+    width: 100%;
+  }
+  #left,
+  #important {
+    width: 46%;
+  }
+}
+@media (max-width: 600px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  header,
+  nav,
+  #main,
+  footer,
+  #left,
+  #important {
+    width: 100%;
+  }
+  nav {
+    background-image: none;
+    justify-content: center;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    border-right: none;
+    border-bottom: 1px solid black;
+    background-image: url('/lab6/images/bg_nav.png');
+    background-size: 100% 100%;
+  }
+}

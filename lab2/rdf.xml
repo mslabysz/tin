@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:bio="http://purl.org/vocab/bio/0.1/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+
+<foaf:Person rdf:ID="s27451">
+   <foaf:name>Maksymilian Słabysz</foaf:name>
+   <foaf:gender>Male</foaf:gender>
+   <foaf:givenname>Maksymilian</foaf:givenname>
+   <foaf:family_name>Słabysz</foaf:family_name>
+   <foaf:homepage rdf:resource="szuflandia.pjwstk.edu.pl/~s27451"/>
+   <bio:Education>
+      <bio:Middleschool>
+         <dc:date rdf:parseType="Literal">2018-06-30</dc:date>
+         <bio:level rdf:parseType="Literal">Absolwent</bio:level>
+         <bio:graduation>
+            <foaf:Organization rdf:about="#middleschool">
+               <foaf:name rdf:parseType="Literal">II Gimnazjum Ogólnokształcące w Sopocie</foaf:name>
+               <foaf:homepage rdf:resource="https://examplegim2.pl"/>
+            </foaf:Organization>
+         </bio:graduation>
+      </bio:Middleschool>
+   </bio:Education>
+   <bio:Education>
+      <bio:Highschool>
+         <dc:date rdf:parseType="Literal">2021-06-30</dc:date>
+         <bio:level rdf:parseType="Literal">Absolwent</bio:level>
+         <bio:graduation>
+            <foaf:Organization rdf:about="#highschool">
+               <foaf:name rdf:parseType="Literal">IX Liceum Ogólnokształcące Imienia Józefa Piłsudskiego w Gdyni</foaf:name>
+               <foaf:homepage rdf:resource="https://lo9.gdynia.pl"/>
+            </foaf:Organization>
+         </bio:graduation>
+      </bio:Highschool>
+   </bio:Education>
+   <bio:Education>
+      <bio:University>
+         <dc:date rdf:parseType="Literal">2026-02-14</dc:date>
+         <bio:level rdf:parseType="Literal">Student</bio:level>
+         <bio:organization>
+            <foaf:Organization rdf:about="#university">
+               <foaf:name rdf:parseType="Literal">Polsko-Japońska Akademia Technik Komputerowych w Gdańsku</foaf:name>
+               <foaf:homepage rdf:resource="https://gdansk.pja.edu.pl"/>
+            </foaf:Organization>
+         </bio:organization>
+      </bio:University>
+   </bio:Education>
+</foaf:Person>
+
+</rdf:RDF>
