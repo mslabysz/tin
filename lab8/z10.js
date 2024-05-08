@@ -8,4 +8,4 @@ function cenzura(niedozwolone, zdanie) {
         return slowo;
     }).join(' ');
 }
-console.log(cenzura(['kurde', 'cholera'], 'kurde co za cholera'));
+console.log(cenzura(['Ala', 'kot'], 'Ala ma kota i psa'));

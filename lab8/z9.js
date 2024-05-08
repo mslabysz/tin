@@ -1,4 +1,4 @@
-function wypiszTrojkatPascala(n) {
+function pascal(n) {
     let pascal = [[1]];
 
     for (let i = 1; i < n; i++) {
@@ -15,4 +15,4 @@ function wypiszTrojkatPascala(n) {
         console.log(row.join(' '));
     }
 }
-wypiszTrojkatPascala(5);
+pascal(5);

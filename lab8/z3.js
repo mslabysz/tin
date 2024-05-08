@@ -1,4 +1,4 @@
-function wypiszTabliczkeMnozenia(n) {
+function tab(n) {
     for (let i = 1; i <= n; i++) {
         let row = '';
         for (let j = 1; j <= n; j++) {
@@ -7,4 +7,4 @@ function wypiszTabliczkeMnozenia(n) {
         console.log(row);
     }
 }
-wypiszTabliczkeMnozenia(5);
+tab(5);

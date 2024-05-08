@@ -5,7 +5,10 @@ const obliczenia = {
     trojkat: (a, h) => (a * h) / 2
 };
 
-function obliczPole(figura, ...args) {
+function pole(figura, ...args) {
     return obliczenia[figura] ? obliczenia[figura](...args) : 'Nieznana figura';
 }
-console.log(obliczPole('prostokat', 2, 3));
+console.log(pole('prostokat', 2, 3));
+console.log(pole('trapez', 2, 3, 4));
+console.log(pole('rownoleglobok', 2, 3));
+console.log(pole('trojkat', 2, 3));

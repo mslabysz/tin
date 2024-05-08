@@ -14,7 +14,7 @@ function poleTrojkata(a, h) {
     return (a * h) / 2;
 }
 
-function obliczPole(figura, ...args) {
+function pole(figura, ...args) {
     switch (figura) {
         case 'prostokat':
             return poleProstokata(...args);
@@ -28,4 +28,7 @@ function obliczPole(figura, ...args) {
             return 'Nieznana figura';
     }
 }
-console.log(obliczPole('prostokat', 2, 3));
+console.log(pole('prostokat', 2, 3));
+console.log(pole('trapez', 2, 3, 4));
+console.log(pole('rownoleglobok', 2, 3));
+console.log(pole('trojkat', 2, 3));
